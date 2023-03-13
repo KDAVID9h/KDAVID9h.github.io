@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="un.css"/>
+  </head>
+  <body>
+    <h1>Contactez-nous</h1>
+   
+    <form action="mailto: dhognon9@gmail.com" method="post" enctype="text/plain">
+      <label for="nom">Nom :</label>
+      <input type="text" name="nom" id="nom" required><br><br>
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" name="email" id="email" required placeholder="exemple@gmail.com"><br><br>
+         <label for="subject">Objet :</label>
+        <input type="text" name="subject" id="subject" required="required"/><br >
+        <label for="message">Message :</label><br>
+      <textarea name="message" id="message" rows="10" cols="30" required></textarea><br><br>
+      <p class="r"> Nous sommes des personnes armés entrain d'organiser une réunion avec les infinitésimales de sodium dans les paragraphes de l'exercice de mécanique. </p>
+    <p >Quelle est votre matière d'excellence ? </br>
+    <input type="radio" name="well" value="Pc" id="Pc"/>
+    <label for="Pc" >Science Physique</label> </br >
+    
+    <input type="radio" name="well" value="mat" id="mat" required="required"/>
+    <label for="mat" >Mathématiques</label></br >
+    <input type="radio" name="well" value="info" id="info"/>
+    <label for="info" >Informatique</label></br ></br >
+    Choisissez votre niveau ->
+    <select name="niveau" id="niveau" > 
+     <option > votre niveau SVP!</option>
+   <optgroup label="Licence Fondamentale">
+    
+    <option value="S1"> L/S1</option>
+    <option value="S2"> L/S2</option>
+    <option value="S3"> L/S3</option>
+    <option value="S4"> L/S4</option>
+    <option value="S5"> L/S5</option>
+    <option value="S6"> L/S6</option>
+   </optgroup >
+   <optgroup label="Licence Professionnelle">
+     <option value="P/S1"> P/S1</option>
+    <option value="S2"> P/S2</option>
+    <option value="S3"> P/S3</option>
+    <option value="S4"> P/S4</option>
+    <option value="S5"> PS5</option>
+    <option value="S6"> P/S6</option>
+   </optgroup>
+    </select>
+    </p><br ><br >
+      <input class="m" type="submit" value ="CLIC ICI POUR ENVOYER VOTRE MAIL SVP" >
+      <input class="n" type="reset" value="Effacer tout" onclick="return confirm('Êtes-vous sûr de vouloir effacer le formulaire ?')"/>
+    </form>
+    <span class="pas"><figure> 
+    <img src="wil.jpg" alt="logo de notre chef David" title="logo de notre chef David"/>
+    <figcaption > "L'expérience est le nom que nous donnons à nos erreurs." </br></br> "Le succès n'est pas final, l'échec n'est pas fatal, c'est le courage de continuer qui compte."</figcaption>
+    </figure></span><br ><br>
+     <p > <a href="index.html">Accueil</a></p><br ><br>
+  </body>
+</html>

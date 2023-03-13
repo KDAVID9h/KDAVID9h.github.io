@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemple de surlignage</title>
+		<link rel="stylesheet" href="style.css"/>
+	<style>
+		.highlight {
+			background-color: yellow;
+		}
+	</style>
+	<script>
+		function surligner() {
+			var mots = document.getElementsByTagName('p');
+			for (var i = 0; i < mots.length; i++) {
+				if (mots[i].innerHTML.includes('David')) {
+					if (mots[i].classList.contains('highlight')) {
+						mots[i].classList.remove('highlight');
+					} else {
+						mots[i].classList.add('highlight');
+					}
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<p>David est un prénom masculin d'origine hébraïque qui signifie "bien-aimé". Dans la Bible, David est le deuxième roi d'Israël. Il est connu pour avoir vaincu Goliath, le géant philistin, grâce à une fronde et une pierre. David est aussi célèbre pour sa relation avec Bethsabée.</p>
+	<p class="ho">David Bowie, de son vrai nom David Robert Jones, est un musicien, chanteur et acteur britannique né en 1947 et décédé en 2016. Il est considéré comme l'un des artistes les plus importants et les plus influents de la musique pop et rock.</p>
+	<p>David Guetta, de son vrai nom Pierre David Guetta, est un DJ et producteur français né en 1967. Il est connu pour ses collaborations avec de nombreux artistes internationaux, notamment Sia, Rihanna et Nicki Minaj.</p>
+	<button onclick="surligner()">Surligner David</button>
+</body>
+</html>
